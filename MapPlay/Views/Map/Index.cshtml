@@ -1,22 +1,18 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Map";
 }
 
 @section pageCSS{
 
-<style type="text/css">
-    #map-canvas {
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-</style>
+    <style type="text/css">
+        #map-canvas {
+            height: 100%;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
 }
-
-<h2>@ViewBag.Title</h2>
-
-    <div id="map-canvas"></div>
+<div id="map-canvas"></div>
 
 @section scripts{
     <script type="text/javascript"
@@ -33,5 +29,6 @@
                 mapOptions);
         }
         google.maps.event.addDomListener(window, 'load', initialize);
+        document.getElementById("map-canvas").parentElement.className = "body-content";
     </script>
 }

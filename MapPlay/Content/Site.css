@@ -1,5 +1,6 @@
 ﻿html {
     height:100%;
+    width:100%;
 }
 
 body {
@@ -28,3 +29,4 @@ select,
 textarea {
     max-width: 280px;
 }
+
