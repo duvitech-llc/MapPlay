@@ -3,11 +3,20 @@
     ViewBag.Title = "Map";
 }
 
+@section pageCSS{
+
+<style type="text/css">
+    #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+</style>
+}
 
 <h2>@ViewBag.Title</h2>
 
-
-<div id="map-canvas" style="width:100%; height:400px%;"></div>
+    <div id="map-canvas"></div>
 
 @section scripts{
     <script type="text/javascript"
